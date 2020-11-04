@@ -1,0 +1,59 @@
+@import './variables';
+
+//------------------------------------>[Hero Section]
+.hero-section {
+     height: 100vh;
+     z-index: 1;
+
+     h1 {
+          font-size: 65px;
+     }
+
+     .hero-section-wrapper {
+          background-image: url('../images/home-reds.png');
+          background-size: cover;
+          filter: blur(8px);
+          -webkit-filter: blur(8px);
+          height: 100%;
+          width: 100%;
+          animation: noblur 2s 0s forwards;
+          background-position: right;
+     }
+
+     @keyframes noblur {
+          from {
+               filter: blur(8px);
+               -webkit-filter: blur(8px);
+          }
+
+          to {
+               filter: blur(0px);
+               -webkit-filter: blur(0px);
+          }
+     }
+}
+
+//------------------------------------>[Pass Through Section]
+.pass-through {
+     z-index: 2;
+     position: relative;
+
+     .app-section {
+          .steps {
+               width: 85px;
+               color: white;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+          }
+     }
+}
+
+
+
+//------------------------------------>[Footer Section]
+.footer-section {
+     background: rgba(0, 0, 0, 0.8);
+     position: relative;
+     z-index: 2;
+}
